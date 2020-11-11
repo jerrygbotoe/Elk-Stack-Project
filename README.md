@@ -6,8 +6,8 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  Install-elk.yml
-  filebeat_playbook.yml
+- Install-elk.yml
+- filebeat_playbook.yml
   
 
 This document contains the following details:
@@ -36,9 +36,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| VM -1    |  Web-1     10.0.0.5   | Linux           |                  |
-| VM -2     | Web-2     10.0.0.6   | Linux           |                  |
-| VM -3     | Web-3     10.0.0.7     Linux            |                  |
+| VM -1    | Web-1    | 10.0.0.5   | Linux            |                  
+| VM -2    | Web-2    |10.0.0.6    | Linux            |                  
+| VM -3    | Web-3    | 10.0.0.7     Linux            |                  
 
 ### Access Policies
 
@@ -54,7 +54,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box |     No              |  76.115.3.135    |
+| Jump Box |     No              |  76.115.3.135        |
 |          |                     |                      |
 |          |                     |                      |
 
@@ -95,7 +95,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IP addresses for the ELK VM in the [ELK] Group
 - Run the playbook, and navigate to elk_server_ip:5601 to check that the installation worked as expected.
 
-_ The playbook is the Install-elk.yml You copy that and install it in /etc/ansible
+- The playbook is the Install-elk.yml You copy that and install it in /etc/ansible
 - You will have to update the Hosts file. When updating the hosts file, you will be able to pick or chose which groups and VMs you want the changes to take effect on.
 - You will navigate to this URL  VM_Public_IP:5601/app/kibanado in order to confirm that the ELK server is running
 
