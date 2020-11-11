@@ -24,7 +24,8 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 - Load balancing ensures that the application will be highly efficient, in addition to restricting traffic to the network.
-- The load balancer add additional layers of security to the website without any changes to your application. It protects against DDoS attack, authenticate user access, protect applications from emerging threats, and simplify PCI compliance. It is resilience, scalable and reduce the load on your web servers and optimize traffic for a better user experience. What is the advantage of a jump box?_
+- The load balancer add additional layers of security to the website without any changes to your application. It protects against DDoS attack, authenticate user access, protect applications from emerging threats, and simplify PCI compliance. It is resilience, scalable and reduce the load on your web servers and optimize traffic for a better user experience. 
+The advantage of a Jumpbox is that it is a hardened and monitored device that spans two dissimilar security zones and provides a controlled means of access between them. It is typically placed between a secure zone and a DMZ to provide transparent management of devices on the DMZ once a management session has been established. It acts as a single audit point for traffic and also a single place where user accounts can be managed.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system files.
 - Filebeat watches for log files as well as specific locations. It will collect those logs and send them to Elasticsearch. 
@@ -37,8 +38,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | VM -1    | Web-1    | 10.0.0.5   | Linux            |                  
-| VM -2    | Web-2    |10.0.0.6    | Linux            |                  
-| VM -3    | Web-3    | 10.0.0.7     Linux            |                  
+| VM -2    | Web-2    | 10.0.0.6   | Linux            |                  
+| VM -3    | Web-3    | 10.0.0.7   | Linux            |                  
 
 ### Access Policies
 
